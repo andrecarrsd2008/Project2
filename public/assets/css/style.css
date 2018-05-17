@@ -1,0 +1,23 @@
+body{
+   background-color: rgb(214, 202, 202);
+   background-image: url("../images/InkedRunners_LI.jpg");
+   background-repeat: no-repeat;
+}
+
+/* #container{
+    height: 30px;
+} */
+
+.nav-link{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: white;
+}
+
+.made-fun{
+    margin-top: 400px;
+    margin-left: 50px;
+    font-size: 50px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
