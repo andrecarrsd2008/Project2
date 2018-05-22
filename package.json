@@ -1,8 +1,13 @@
 {
-  "name": "fitme",
+  "name": "project2",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
+  "dependencies": {
+    "react-facebook-login": "^4.0.1",
+    "vue-chartjs": "^3.3.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -16,6 +21,7 @@
   "bugs": {
     "url": "https://github.com/andrecarrsd2008/Project2/issues"
   },
+
   "homepage": "https://github.com/andrecarrsd2008/Project2#readme",
   "dependencies": {
     "body-parser": "^1.18.3",

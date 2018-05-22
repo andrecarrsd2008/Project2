@@ -11,6 +11,14 @@ CREATE TABLE fitness
     hoursOfSleep INT(10) NOT NULL,
     boolOfActive INT(10) NOT NULL,
     weighKG INT(10) NOT NULL,
-	sleepy BOOLEAN DEFAULT false,
-	PRIMARY KEY (id)
+	user_ID int FOREIGN KEY references users(user_ID)
+);
+
+CREATE TABLE users
+(
+    user_ID int NOT NULL AUTO_INCREMENT,
+    user_name varchar(100),
+    user_Email varchar(100),
+    user_password varchar(100),
+    PRIMARY KEY (user_ID)
 );
