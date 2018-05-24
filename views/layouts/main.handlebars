@@ -11,20 +11,28 @@
     <title>FitMe</title>
 </head>
 <body> 
-
-
-
- <div class="create">
-    <div id="navbar">
+<div class="create">
+    <div class="navbar">
        <a>FitMe</a>
        <div class="nav">   
           <a href="" id="index">Login</a>
           <a href="" id="index">Home</a>
           <a href="" id="index"index>About</a>
-          <a href="" id="index">Contact</a>
        </div>  
     </div> 
  </div>
+<script>
+    function showPass()
+    {
+        var pass = document.getElementById('pass');
+        if(document.getElementById('check').checked)
+    {
+           pass.setAttribute('type', 'text');
+        }else{
+            pass.setAttribute('type', 'password')
+        }
+    }    
+</script>
 
 <div class="track">
     Fitness Tracking Made Fun
@@ -34,19 +42,24 @@
    <div class="center">
       <h1 class="dash">Dashboard</h1>
       <p><input class="text" placeholder="Email or Phone Number" /></p>
-      <p><input class="password" placeholder="Password" /></p>
+      <input type="password" id="pass"/>
+      <input type="checkbox" id="check" onclick="showPass();"/>Show Password
       <p><input type="checkbox" />Forget password</p>
-      <button class="btn btn-login">Login with Facebook</button>
+      <button class="btn btn-login">Login with Gmail</button>
       <p><input type="checkbox" />Keep me Logged in</p>
    </div>  
 </section>
-      
-       
+
+<div class="slantedDivB"></div>
+<h3>You can use the application to track your moves on a daily basis.</h3>
+<img class="gif" src="assets/images/runningman.gif" alt="" style="width: 470px; height: 410px;">     
+     
+
 <Footer>
   <div class="copy">
     &copyFitMe 2018,
-    Amjed Industries,
     Justin Incorporated,
+    Amjad Industries,
     Andre LLC. 2018
   </div>
 </Footer>
